@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilihan Paket Soal Latihan Simulasi SD</title>
+</head>
+<body style="margin: 0; font-family: Arial, sans-serif; background-color: #f4f4f9;">
+
+    <!-- Kontainer Utama -->
+    <div class="app-container" style="
+        background: #ffffff; 
+        border-radius: 45px; 
+        padding: 0px 25px 25px 25px; 
+        max-width: 375px; 
+        margin: auto; 
+        box-sizing: border-box;
+        min-height: 100vh;
+    ">
+        <!-- HEADER STICKY (Hanya berisi tombol Kembali) -->
+        <div style="
+            position: sticky; 
+            top: 0; 
+            background: rgb(59, 251, 1);
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+            padding: 15px 25px; 
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            height: 0px;
+        ">
+            <div style="cursor: pointer; font-weight: 700; color: #0f264c;" 
+                onclick="window.location.href='#.html'">
+                ← Kembali
+            </div>
+            <div style="font-weight: 700; color: #0f264c; margin-left: auto; margin-right: -15px; padding-right: 0px; font-size: 14px;">
+                Ujian TKA SD
+            </div>
+        </div>
+
+        <div class="ruang-belajar-banner"style="
+            margin-top: 20px;                               /* Jarak ke atas dari elemen sebelumnya */
+            margin-bottom: 20px;                            /* Jarak ke bawah dari elemen sebelumnya */
+            font-weight: bold;
+            margin-left: 16px;                               /* Jarak ke dalam dari sisi kiri */
+            margin-right: 16px;                              /* Jarak ke dalam dari sisi kanan */
+            background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+            padding: 5Px;
+            border-radius: 10px;
+            color: white;
+            box-shadow: 0 8px 20px rgba(108, 92, 231, 0.15);
+            box-sizing: border-box;
+            flex-shrink: 0;
+            text-align: center;
+            font-family: 'Times New Roman', serif; /* Mengubah huruf menjadi Times New Roman */
+            ">
+            PILIH &nbsp;PAKET &nbsp;UJIAN
+        </div>
+
+        <div style="padding: 0 16px; display: flex; flex-direction: column; gap: 15px; padding-bottom: 30px;">
+            
+            <div onclick="window.location.href='Simulasi_Paket_001.html'" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 15px; padding: 12px 15px; display: flex; align-items: center; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.02); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                <!-- Bagian Ikon Simulasi Paket 01 -->
+                <div style="display: flex; align-items: center; justify-content: center; min-width: 50px; margin-right: 15px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#6c5ce7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <!-- Representasi Bola Dunia / Jaringan Simulasi -->
+                        <circle cx="11" cy="13" r="8" stroke-dasharray="3 1" opacity="0.6"/>
+                        <path d="M11 5a8 8 0 0 0 0 16 M3 13h16"/>
+                        <!-- Representasi Monitor / Chart Analisis Paket -->
+                        <rect x="13" y="3" width="9" height="7" rx="1" fill="#ffffff" stroke="#6c5ce7" stroke-width="1.5"/>
+                        <line x1="16" y1="8" x2="16" y2="6" stroke-width="1.5"/>
+                        <line x1="19" y1="8" x2="19" y2="5" stroke-width="1.5"/>
+                    </svg>
+                </div>
+                
+                <!-- Bagian Teks -->
+                <div>
+                    <div style="font-weight: bold; color: #0f264c; font-size: 15px;">SIMULASI PAKET 01</div>
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;">Latihan Simulasi : 25 Soal</div>
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;">Waktu Soal : 100 Menit</div>
+                </div>
+                <div style="font-weight: bold; color: #0f264c; font-size: 13px; margin-left: 19px; text-align: center;">Skor<br><span id="tampilan-nilai-SimPak001">0</span></div>
+            </div>
+
+            <div onclick="window.location.href='Simulasi_Paket_002.html'" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 15px; padding: 12px 15px; display: flex; align-items: center; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.02); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                <!-- Bagian Ikon Simulasi Paket 02 -->
+                <div style="display: flex; align-items: center; justify-content: center; min-width: 50px; margin-right: 15px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#6c5ce7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <!-- Representasi Bola Dunia / Jaringan Simulasi -->
+                        <circle cx="11" cy="13" r="8" stroke-dasharray="3 1" opacity="0.6"/>
+                        <path d="M11 5a8 8 0 0 0 0 16 M3 13h16"/>
+                        <!-- Representasi Monitor / Chart Analisis Paket 02 (Variasi Grafik Garis/Tren) -->
+                        <rect x="13" y="3" width="9" height="7" rx="1" fill="#ffffff" stroke="#6c5ce7" stroke-width="1.5"/>
+                        <path d="M15 8l2-3 2 2" stroke-width="1.5"/>
+                    </svg>
+                </div>
+                
+                <!-- Bagian Teks -->
+                <div>
+                    <div style="font-weight: bold; color: #0f264c; font-size: 15px;">SIMULASI PAKET 02</div>
+                    <!-- Silakan sesuaikan sub-materi di bawah ini jika berbeda dengan Paket 01 -->
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;">Latihan Simulasi : 30 Soal</div>
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;">Waktu Soal : 100 Menit</div>
+                </div>
+                <div style="font-weight: bold; color: #0f264c; font-size: 13px; margin-left: 19px; text-align: center;">Skor<br><span id="tampilan-nilai-SimPak002">0</span></div>
+            </div>
+
+            <div onclick="window.location.href='#.html'" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 15px; padding: 12px 15px; display: flex; align-items: center; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.02); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                <!-- Bagian Ikon Simulasi Paket 03 -->
+                <div style="display: flex; align-items: center; justify-content: center; min-width: 50px; margin-right: 15px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#6c5ce7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <!-- Representasi Bola Dunia / Jaringan Simulasi -->
+                        <circle cx="11" cy="13" r="8" stroke-dasharray="3 1" opacity="0.6"/>
+                        <path d="M11 5a8 8 0 0 0 0 16 M3 13h16"/>
+                        <!-- Representasi Monitor / Chart Analisis Paket 03 (Variasi Pie Chart/Lingkaran) -->
+                        <rect x="13" y="3" width="9" height="7" rx="1" fill="#ffffff" stroke="#6c5ce7" stroke-width="1.5"/>
+                        <circle cx="17.5" cy="6.5" r="2" stroke-width="1.5"/>
+                        <path d="M17.5 4.5v2h2" stroke-width="1"/>
+                    </svg>
+                </div>
+                
+                <!-- Bagian Teks -->
+                <div>
+                    <div style="font-weight: bold; color: #0f264c; font-size: 15px;">SIMULASI PAKET 03</div>
+                    <!-- Silakan sesuaikan sub-materi di bawah ini jika berbeda dengan Paket sebelumnya -->
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;">Soal Asli Simulasi : 20 Soal</div>
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;">Waktu Soal : 100 Menit</div>
+                </div>
+                <div style="font-weight: bold; color: #0f264c; font-size: 13px; margin-left: 19px; text-align: center;">Skor<br><span id="tampilan-nilai-SimPak003">0</span></div>
+            </div>
+
+            <div onclick="window.location.href='#.html'" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 15px; padding: 12px 15px; display: flex; align-items: center; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.02); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                <!-- Bagian Ikon Simulasi Paket 04 -->
+                <div style="display: flex; align-items: center; justify-content: center; min-width: 50px; margin-right: 15px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#6c5ce7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <!-- Representasi Bola Dunia / Jaringan Simulasi -->
+                        <circle cx="11" cy="13" r="8" stroke-dasharray="3 1" opacity="0.6"/>
+                        <path d="M11 5a8 8 0 0 0 0 16 M3 13h16"/>
+                        <!-- Representasi Monitor / Chart Analisis Paket 04 (Variasi Progres/Loading Meter) -->
+                        <rect x="13" y="3" width="9" height="7" rx="1" fill="#ffffff" stroke="#6c5ce7" stroke-width="1.5"/>
+                        <path d="M15 6.5a2.5 2.5 0 0 1 4.5 -1.5" stroke-width="1.5"/>
+                        <circle cx="17.5" cy="6.5" r="0.5" fill="#6c5ce7"/>
+                    </svg>
+                </div>
+                
+                <!-- Bagian Teks -->
+                <div>
+                    <div style="font-weight: bold; color: #0f264c; font-size: 15px;">SIMULASI PAKET 04</div>
+                    <!-- Silakan sesuaikan sub-materi di bawah ini jika berbeda dengan Paket sebelumnya -->
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;"></div>
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;"></div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='#.html'" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 15px; padding: 12px 15px; display: flex; align-items: center; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.02); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                <!-- Bagian Ikon Simulasi Paket 05 -->
+                <div style="display: flex; align-items: center; justify-content: center; min-width: 50px; margin-right: 15px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#6c5ce7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <!-- Representasi Bola Dunia / Jaringan Simulasi -->
+                        <circle cx="11" cy="13" r="8" stroke-dasharray="3 1" opacity="0.6"/>
+                        <path d="M11 5a8 8 0 0 0 0 16 M3 13h16"/>
+                        <!-- Representasi Monitor / Chart Analisis Paket 05 (Variasi Centang / Hasil Sukses) -->
+                        <rect x="13" y="3" width="9" height="7" rx="1" fill="#ffffff" stroke="#6c5ce7" stroke-width="1.5"/>
+                        <path d="M15.5 6.5l1.5 1.5 3-3" stroke-width="1.5"/>
+                    </svg>
+                </div>
+                
+                <!-- Bagian Teks -->
+                <div>
+                    <div style="font-weight: bold; color: #0f264c; font-size: 15px;">SIMULASI PAKET 05</div>
+                    <!-- Silakan sesuaikan sub-materi di bawah ini jika berbeda dengan Paket sebelumnya -->
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;"></div>
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;"></div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='#.html'" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 15px; padding: 12px 15px; display: flex; align-items: center; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.02); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                <!-- Bagian Ikon Simulasi Paket 06 -->
+                <div style="display: flex; align-items: center; justify-content: center; min-width: 50px; margin-right: 15px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#6c5ce7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <!-- Representasi Bola Dunia / Jaringan Simulasi -->
+                        <circle cx="11" cy="13" r="8" stroke-dasharray="3 1" opacity="0.6"/>
+                        <path d="M11 5a8 8 0 0 0 0 16 M3 13h16"/>
+                        <!-- Representasi Monitor / Chart Analisis Paket 06 (Variasi Trofi / Pencapaian) -->
+                        <rect x="13" y="3" width="9" height="7" rx="1" fill="#ffffff" stroke="#6c5ce7" stroke-width="1.5"/>
+                        <path d="M16 5h3v1.5a1.5 1.5 0 0 1-1.5 1.5h0A1.5 1.5 0 0 1 16 6.5V5z" stroke-width="1"/>
+                        <path d="M16 5.5v1a1.5 1.5 0 0 0 1.5 1.5M17.5 8v1M16.5 9h2" stroke-width="1.2"/>
+                    </svg>
+                </div>
+                
+                <!-- Bagian Teks -->
+                <div>
+                    <div style="font-weight: bold; color: #0f264c; font-size: 15px;">SIMULASI PAKET 06</div>
+                    <!-- Silakan sesuaikan sub-materi di bawah ini jika berbeda dengan Paket sebelumnya -->
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;"></div>
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;"></div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='#.html'" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 15px; padding: 12px 15px; display: flex; align-items: center; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.02); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                <!-- Bagian Ikon Simulasi Paket 07 -->
+                <div style="display: flex; align-items: center; justify-content: center; min-width: 50px; margin-right: 15px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#6c5ce7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <!-- Representasi Bola Dunia / Jaringan Simulasi -->
+                        <circle cx="11" cy="13" r="8" stroke-dasharray="3 1" opacity="0.6"/>
+                        <path d="M11 5a8 8 0 0 0 0 16 M3 13h16"/>
+                        <!-- Representasi Monitor / Chart Analisis Paket 07 (Variasi Kunci/Gembok Keamanan) -->
+                        <rect x="13" y="3" width="9" height="7" rx="1" fill="#ffffff" stroke="#6c5ce7" stroke-width="1.5"/>
+                        <rect x="16" y="6.5" width="3" height="2.5" rx="0.5" stroke-width="1.2"/>
+                        <path d="M16.5 6.5v-1a1 1 0 0 1 2 0v1" stroke-width="1"/>
+                    </svg>
+                </div>
+                
+                <!-- Bagian Teks -->
+                <div>
+                    <div style="font-weight: bold; color: #0f264c; font-size: 15px;">SIMULASI PAKET 07</div>
+                    <!-- Silakan sesuaikan sub-materi di bawah ini jika berbeda dengan Paket sebelumnya -->
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;"></div>
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;"></div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='#.html'" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 15px; padding: 12px 15px; display: flex; align-items: center; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.02); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                <!-- Bagian Ikon Simulasi Paket 08 -->
+                <div style="display: flex; align-items: center; justify-content: center; min-width: 50px; margin-right: 15px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#6c5ce7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <!-- Representasi Bola Dunia / Jaringan Simulasi -->
+                        <circle cx="11" cy="13" r="8" stroke-dasharray="3 1" opacity="0.6"/>
+                        <path d="M11 5a8 8 0 0 0 0 16 M3 13h16"/>
+                        <!-- Representasi Monitor / Chart Analisis Paket 08 (Variasi Bintang / Paket Final) -->
+                        <rect x="13" y="3" width="9" height="7" rx="1" fill="#ffffff" stroke="#6c5ce7" stroke-width="1.5"/>
+                        <path d="M17.5 4.5l.5 1.2h1.3l-1 1 .4 1.3-1.2-.8-1.2.8.4-1.3-1-1h1.3z" fill="#6c5ce7" stroke-width="0.5"/>
+                    </svg>
+                </div>
+                
+                <!-- Bagian Teks -->
+                <div>
+                    <div style="font-weight: bold; color: #0f264c; font-size: 15px;">SIMULASI PAKET 08</div>
+                    <!-- Silakan sesuaikan sub-materi di bawah ini jika berbeda dengan Paket sebelumnya -->
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;"></div>
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;"></div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='#.html'" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 15px; padding: 12px 15px; display: flex; align-items: center; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.02); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                <!-- Bagian Ikon Simulasi Paket 09 -->
+                <div style="display: flex; align-items: center; justify-content: center; min-width: 50px; margin-right: 15px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#6c5ce7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <!-- Representasi Bola Dunia / Jaringan Simulasi -->
+                        <circle cx="11" cy="13" r="8" stroke-dasharray="3 1" opacity="0.6"/>
+                        <path d="M11 5a8 8 0 0 0 0 16 M3 13h16"/>
+                        <!-- Representasi Monitor / Layar -->
+                        <rect x="13" y="3" width="9" height="7" rx="1" fill="#ffffff" stroke="#6c5ce7" stroke-width="1.5"/>
+                        <!-- Simbol Angka 9 / Simbol Pencarian Cerdas di dalam Layar -->
+                        <circle cx="17.5" cy="5.5" r="1.2" stroke-width="1.2"/>
+                        <path d="M18.7 5.5v1.5a1.2 1.2 0 0 1-1.2 1.2h-.5" stroke-width="1.2"/>
+                    </svg>
+                </div>
+                
+                <!-- Bagian Teks -->
+                <div>
+                    <div style="font-weight: bold; color: #0f264c; font-size: 15px;">SIMULASI PAKET 09</div>
+                    <!-- Silakan sesuaikan sub-materi di bawah ini jika berbeda dengan Paket sebelumnya -->
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;"></div>
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;"></div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='#.html'" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 15px; padding: 12px 15px; display: flex; align-items: center; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.02); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                <!-- Bagian Ikon Simulasi Paket 10 -->
+                <div style="display: flex; align-items: center; justify-content: center; min-width: 50px; margin-right: 15px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#6c5ce7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <!-- Representasi Bola Dunia / Jaringan Simulasi -->
+                        <circle cx="11" cy="13" r="8" stroke-dasharray="3 1" opacity="0.6"/>
+                        <path d="M11 5a8 8 0 0 0 0 16 M3 13h16"/>
+                        <!-- Representasi Monitor / Layar -->
+                        <rect x="13" y="3" width="9" height="7" rx="1" fill="#ffffff" stroke="#6c5ce7" stroke-width="1.5"/>
+                        <!-- Simbol Representasi Angka 10 (Garis Tegak & Lingkaran Kecil) -->
+                        <line x1="16" y1="5" x2="16" y2="8" stroke-width="1.5"/>
+                        <circle cx="19" cy="6.5" r="1" stroke-width="1.2"/>
+                    </svg>
+                </div>
+                
+                <!-- Bagian Teks -->
+                <div>
+                    <div style="font-weight: bold; color: #0f264c; font-size: 15px;">SIMULASI PAKET 10</div>
+                    <!-- Silakan sesuaikan sub-materi di bawah ini jika berbeda dengan Paket sebelumnya -->
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;"></div>
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;"></div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='#.html'" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 15px; padding: 12px 15px; display: flex; align-items: center; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.02); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                <!-- Bagian Ikon Simulasi Paket 11 -->
+                <div style="display: flex; align-items: center; justify-content: center; min-width: 50px; margin-right: 15px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#6c5ce7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <!-- Representasi Bola Dunia / Jaringan Simulasi -->
+                        <circle cx="11" cy="13" r="8" stroke-dasharray="3 1" opacity="0.6"/>
+                        <path d="M11 5a8 8 0 0 0 0 16 M3 13h16"/>
+                        <!-- Representasi Monitor / Layar -->
+                        <rect x="13" y="3" width="9" height="7" rx="1" fill="#ffffff" stroke="#6c5ce7" stroke-width="1.5"/>
+                        <!-- Simbol Representasi Angka 11 (Dua Garis Tegak Sejajar) -->
+                        <line x1="16" y1="5" x2="16" y2="8" stroke-width="1.5"/>
+                        <line x1="19" y1="5" x2="19" y2="8" stroke-width="1.5"/>
+                    </svg>
+                </div>
+                
+                <!-- Bagian Teks -->
+                <div>
+                    <div style="font-weight: bold; color: #0f264c; font-size: 15px;">SIMULASI PAKET 11</div>
+                    <!-- Silakan sesuaikan sub-materi di bawah ini jika berbeda dengan Paket sebelumnya -->
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;"></div>
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;"></div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='#.html'" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 15px; padding: 12px 15px; display: flex; align-items: center; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.02); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                <!-- Bagian Ikon Simulasi Paket 12 -->
+                <div style="display: flex; align-items: center; justify-content: center; min-width: 50px; margin-right: 15px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#6c5ce7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <!-- Representasi Bola Dunia / Jaringan Simulasi -->
+                        <circle cx="11" cy="13" r="8" stroke-dasharray="3 1" opacity="0.6"/>
+                        <path d="M11 5a8 8 0 0 0 0 16 M3 13h16"/>
+                        <!-- Representasi Monitor / Layar -->
+                        <rect x="13" y="3" width="9" height="7" rx="1" fill="#ffffff" stroke="#6c5ce7" stroke-width="1.5"/>
+                        <!-- Simbol Grafik Tren Naik di Dalam Layar -->
+                        <path d="M15 8l2-2 1.5 1.5 2.5-3" stroke-width="1.2"/>
+                        <path d="M19 4.5h2v2" stroke-width="1.2"/>
+                    </svg>
+                </div>
+                
+                <!-- Bagian Teks -->
+                <div>
+                    <div style="font-weight: bold; color: #0f264c; font-size: 15px;">SIMULASI PAKET 12</div>
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;"></div>
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;"></div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='#.html'" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 15px; padding: 12px 15px; display: flex; align-items: center; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.02); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                <!-- Bagian Ikon Simulasi Paket 13 -->
+                <div style="display: flex; align-items: center; justify-content: center; min-width: 50px; margin-right: 15px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#6c5ce7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <!-- Representasi Bola Dunia / Jaringan Simulasi -->
+                        <circle cx="11" cy="13" r="8" stroke-dasharray="3 1" opacity="0.6"/>
+                        <path d="M11 5a8 8 0 0 0 0 16 M3 13h16"/>
+                        <!-- Representasi Monitor / Layar -->
+                        <rect x="13" y="3" width="9" height="7" rx="1" fill="#ffffff" stroke="#6c5ce7" stroke-width="1.5"/>
+                        <!-- Simbol Kaca Pembesar / Analisis di Dalam Layar -->
+                        <circle cx="17" cy="6" r="1.5" stroke-width="1.2"/>
+                        <line x1="18.2" y1="7.2" x2="20" y2="9" stroke-width="1.5"/>
+                    </svg>
+                </div>
+                
+                <!-- Bagian Teks -->
+                <div>
+                    <div style="font-weight: bold; color: #0f264c; font-size: 15px;">SIMULASI PAKET 13</div>
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;"></div>
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;"></div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='#.html'" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 15px; padding: 12px 15px; display: flex; align-items: center; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.02); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                <!-- Bagian Ikon Simulasi Paket 14 -->
+                <div style="display: flex; align-items: center; justify-content: center; min-width: 50px; margin-right: 15px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#6c5ce7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <!-- Representasi Bola Dunia / Jaringan Simulasi -->
+                        <circle cx="11" cy="13" r="8" stroke-dasharray="3 1" opacity="0.6"/>
+                        <path d="M11 5a8 8 0 0 0 0 16 M3 13h16"/>
+                        <!-- Representasi Monitor / Layar -->
+                        <rect x="13" y="3" width="9" height="7" rx="1" fill="#ffffff" stroke="#6c5ce7" stroke-width="1.5"/>
+                        <!-- Simbol Petir di Dalam Layar -->
+                        <path d="M18.5 4.5l-2 2.5h2l-1 2.5 3-3h-2z" fill="#6c5ce7" stroke-width="0.5"/>
+                    </svg>
+                </div>
+                
+                <!-- Bagian Teks -->
+                <div>
+                    <div style="font-weight: bold; color: #0f264c; font-size: 15px;">SIMULASI PAKET 14</div>
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;"></div>
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;"></div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='#.html'" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 15px; padding: 12px 15px; display: flex; align-items: center; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.02); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                <!-- Bagian Ikon Simulasi Paket 15 -->
+                <div style="display: flex; align-items: center; justify-content: center; min-width: 50px; margin-right: 15px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#6c5ce7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <!-- Representasi Bola Dunia / Jaringan Simulasi -->
+                        <circle cx="11" cy="13" r="8" stroke-dasharray="3 1" opacity="0.6"/>
+                        <path d="M11 5a8 8 0 0 0 0 16 M3 13h16"/>
+                        <!-- Representasi Monitor / Layar -->
+                        <rect x="13" y="3" width="9" height="7" rx="1" fill="#ffffff" stroke="#6c5ce7" stroke-width="1.5"/>
+                        <!-- Simbol Buku Terbuka di Dalam Layar -->
+                        <path d="M14.5 8.5q1.5-1.5 3 0q1.5-1.5 3 0" stroke-width="1"/>
+                        <line x1="17.5" y1="5.5" x2="17.5" y2="8.5" stroke-width="1"/>
+                    </svg>
+                </div>
+                
+                <!-- Bagian Teks -->
+                <div>
+                    <div style="font-weight: bold; color: #0f264c; font-size: 15px;">SIMULASI PAKET 15</div>
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;"></div>
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;"></div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='#.html'" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 15px; padding: 12px 15px; display: flex; align-items: center; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.02); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                <!-- Bagian Ikon Simulasi Perkalian -->
+                <div style="display: flex; align-items: center; justify-content: center; min-width: 50px; margin-right: 15px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#6c5ce7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <!-- Representasi Bola Dunia / Jaringan Simulasi -->
+                        <circle cx="11" cy="13" r="8" stroke-dasharray="3 1" opacity="0.6"/>
+                        <path d="M11 5a8 8 0 0 0 0 16 M3 13h16"/>
+                        <!-- Representasi Monitor / Layar -->
+                        <rect x="13" y="3" width="9" height="7" rx="1" fill="#ffffff" stroke="#6c5ce7" stroke-width="1.5"/>
+                        <!-- Simbol Perkalian (X) di Dalam Layar -->
+                        <path d="M15.5 5l4 3 M19.5 5l-4 3" stroke-width="1.5"/>
+                    </svg>
+                </div>
+                
+                <!-- Bagian Teks -->
+                <div>
+                    <div style="font-weight: bold; color: #0f264c; font-size: 15px;">SIMULASI PAKET 16</div>
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;"></div>
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;"></div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='#.html'" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 15px; padding: 12px 15px; display: flex; align-items: center; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.02); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                <!-- Bagian Ikon Simulasi Pembagian -->
+                <div style="display: flex; align-items: center; justify-content: center; min-width: 50px; margin-right: 15px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#6c5ce7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <!-- Representasi Bola Dunia / Jaringan Simulasi -->
+                        <circle cx="11" cy="13" r="8" stroke-dasharray="3 1" opacity="0.6"/>
+                        <path d="M11 5a8 8 0 0 0 0 16 M3 13h16"/>
+                        <!-- Representasi Monitor / Layar -->
+                        <rect x="13" y="3" width="9" height="7" rx="1" fill="#ffffff" stroke="#6c5ce7" stroke-width="1.5"/>
+                        <!-- Simbol Pembagian (÷) di Dalam Layar -->
+                        <line x1="15" y1="6.5" x2="20" y2="6.5" stroke-width="1.5"/>
+                        <circle cx="17.5" cy="4.5" r="0.5" fill="#6c5ce7" stroke="none"/>
+                        <circle cx="17.5" cy="8.5" r="0.5" fill="#6c5ce7" stroke="none"/>
+                    </svg>
+                </div>
+                
+                <!-- Bagian Teks -->
+                <div>
+                    <div style="font-weight: bold; color: #0f264c; font-size: 15px;">SIMULASI PAKET 17</div>
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;"></div>
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;"></div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='#.html'" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 15px; padding: 12px 15px; display: flex; align-items: center; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.02); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                <!-- Bagian Ikon Simulasi Paket 18 -->
+                <div style="display: flex; align-items: center; justify-content: center; min-width: 50px; margin-right: 15px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#6c5ce7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <!-- Representasi Bola Dunia / Jaringan Simulasi -->
+                        <circle cx="11" cy="13" r="8" stroke-dasharray="3 1" opacity="0.6"/>
+                        <path d="M11 5a8 8 0 0 0 0 16 M3 13h16"/>
+                        <!-- Representasi Monitor / Layar -->
+                        <rect x="13" y="3" width="9" height="7" rx="1" fill="#ffffff" stroke="#6c5ce7" stroke-width="1.5"/>
+                        <!-- Simbol Alat/Kunci Masalah di Dalam Layar -->
+                        <path d="M18.5 4.5l-2.5 2.5v1.5h1.5l2.5-2.5" stroke-width="1.2"/>
+                        <circle cx="19.5" cy="4.5" r="0.8" fill="#6c5ce7" stroke="none"/>
+                    </svg>
+                </div>
+                
+                <!-- Bagian Teks -->
+                <div>
+                    <div style="font-weight: bold; color: #0f264c; font-size: 15px;">SIMULASI PAKET 18</div>
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;"></div>
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;"></div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='#.html'" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 15px; padding: 12px 15px; display: flex; align-items: center; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.02); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                <!-- Bagian Ikon Simulasi Paket 19 -->
+                <div style="display: flex; align-items: center; justify-content: center; min-width: 50px; margin-right: 15px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#6c5ce7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <!-- Representasi Bola Dunia / Jaringan Simulasi -->
+                        <circle cx="11" cy="13" r="8" stroke-dasharray="3 1" opacity="0.6"/>
+                        <path d="M11 5a8 8 0 0 0 0 16 M3 13h16"/>
+                        <!-- Representasi Monitor / Layar -->
+                        <rect x="13" y="3" width="9" height="7" rx="1" fill="#ffffff" stroke="#6c5ce7" stroke-width="1.5"/>
+                        <!-- Simbol Centang (Checkmark) di Dalam Layar -->
+                        <path d="M15.5 6.5l1.5 1.5 3.5-3.5" stroke-width="1.5"/>
+                    </svg>
+                </div>
+                
+                <!-- Bagian Teks -->
+                <div>
+                    <div style="font-weight: bold; color: #0f264c; font-size: 15px;">SIMULASI PAKET 19</div>
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;"></div>
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;"></div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='#.html'" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 15px; padding: 12px 15px; display: flex; align-items: center; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.02); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                <!-- Bagian Ikon Simulasi Paket 20 -->
+                <div style="display: flex; align-items: center; justify-content: center; min-width: 50px; margin-right: 15px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#6c5ce7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <!-- Representasi Bola Dunia / Jaringan Simulasi -->
+                        <circle cx="11" cy="13" r="8" stroke-dasharray="3 1" opacity="0.6"/>
+                        <path d="M11 5a8 8 0 0 0 0 16 M3 13h16"/>
+                        <!-- Representasi Monitor / Layar -->
+                        <rect x="13" y="3" width="9" height="7" rx="1" fill="#ffffff" stroke="#6c5ce7" stroke-width="1.5"/>
+                        <!-- Simbol Piala Finis di Dalam Layar -->
+                        <path d="M15 4.5h5v2.5q0 1-1 1h-3q-1 0-1-1z" fill="#6c5ce7" stroke-width="0.5"/>
+                        <line x1="17.5" y1="8" x2="17.5" y2="9.5" stroke-width="1.2"/>
+                    </svg>
+                </div>
+                
+                <!-- Bagian Teks -->
+                <div>
+                    <div style="font-weight: bold; color: #0f264c; font-size: 15px;">SIMULASI PAKET 20</div>
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;"></div>
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;"></div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='#.html'" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 15px; padding: 12px 15px; display: flex; align-items: center; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.02); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                <!-- Bagian Ikon Simulasi Paket 21 -->
+                <div style="display: flex; align-items: center; justify-content: center; min-width: 50px; margin-right: 15px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#6c5ce7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <!-- Representasi Bola Dunia / Jaringan Simulasi -->
+                        <circle cx="11" cy="13" r="8" stroke-dasharray="3 1" opacity="0.6"/>
+                        <path d="M11 5a8 8 0 0 0 0 16 M3 13h16"/>
+                        <!-- Representasi Monitor / Layar -->
+                        <rect x="13" y="3" width="9" height="7" rx="1" fill="#ffffff" stroke="#6c5ce7" stroke-width="1.5"/>
+                        <!-- Simbol Gembok Terbuka di Dalam Layar -->
+                        <rect x="15" y="6" width="5" height="3.5" rx="0.5" stroke-width="1"/>
+                        <path d="M16 6V4.8a1.2 1.2 0 0 1 2.2-.6" stroke-width="1"/>
+                    </svg>
+                </div>
+                
+                <!-- Bagian Teks -->
+                <div>
+                    <div style="font-weight: bold; color: #0f264c; font-size: 15px;">SIMULASI PAKET 21</div>
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;"></div>
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;"></div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='#.html'" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 15px; padding: 12px 15px; display: flex; align-items: center; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.02); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                <!-- Bagian Ikon Simulasi Paket 22 -->
+                <div style="display: flex; align-items: center; justify-content: center; min-width: 50px; margin-right: 15px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#6c5ce7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <!-- Representasi Bola Dunia / Jaringan Simulasi -->
+                        <circle cx="11" cy="13" r="8" stroke-dasharray="3 1" opacity="0.6"/>
+                        <path d="M11 5a8 8 0 0 0 0 16 M3 13h16"/>
+                        <!-- Representasi Monitor / Layar -->
+                        <rect x="13" y="3" width="9" height="7" rx="1" fill="#ffffff" stroke="#6c5ce7" stroke-width="1.5"/>
+                        <!-- Simbol Mahkota Master di Dalam Layar -->
+                        <path d="M14.5 8h6l.5-3.5-1.5 1.5-2-2.5-2 2.5-1.5-1.5z" fill="#6c5ce7" stroke-width="0.5"/>
+                    </svg>
+                </div>
+                
+                <!-- Bagian Teks -->
+                <div>
+                    <div style="font-weight: bold; color: #0f264c; font-size: 15px;">SIMULASI PAKET 22</div>
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;"></div>
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;"></div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='#.html'" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 15px; padding: 12px 15px; display: flex; align-items: center; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.02); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                <!-- Bagian Ikon Simulasi Paket 23 -->
+                <div style="display: flex; align-items: center; justify-content: center; min-width: 50px; margin-right: 15px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#6c5ce7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <!-- Representasi Bola Dunia / Jaringan Simulasi -->
+                        <circle cx="11" cy="13" r="8" stroke-dasharray="3 1" opacity="0.6"/>
+                        <path d="M11 5a8 8 0 0 0 0 16 M3 13h16"/>
+                        <!-- Representasi Monitor / Layar -->
+                        <rect x="13" y="3" width="9" height="7" rx="1" fill="#ffffff" stroke="#6c5ce7" stroke-width="1.5"/>
+                        <!-- Simbol Kunci Solusi di Dalam Layar -->
+                        <circle cx="18.5" cy="5.5" r="1" stroke-width="1"/>
+                        <path d="M17.8 6.2l-2.3 2.3v1h1v-0.5h0.5v-0.5h0.5l0.8-.8" stroke-width="1"/>
+                    </svg>
+                </div>
+                
+                <!-- Bagian Teks -->
+                <div>
+                    <div style="font-weight: bold; color: #0f264c; font-size: 15px;">SIMULASI PAKET 23</div>
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;"></div>
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;"></div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='#.html'" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 15px; padding: 12px 15px; display: flex; align-items: center; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.02); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                <!-- Bagian Ikon Simulasi Paket 24 -->
+                <div style="display: flex; align-items: center; justify-content: center; min-width: 50px; margin-right: 15px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#6c5ce7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <!-- Representasi Bola Dunia / Jaringan Simulasi -->
+                        <circle cx="11" cy="13" r="8" stroke-dasharray="3 1" opacity="0.6"/>
+                        <path d="M11 5a8 8 0 0 0 0 16 M3 13h16"/>
+                        <!-- Representasi Monitor / Layar -->
+                        <rect x="13" y="3" width="9" height="7" rx="1" fill="#ffffff" stroke="#6c5ce7" stroke-width="1.5"/>
+                        <!-- Simbol Target di Dalam Layar -->
+                        <circle cx="17.5" cy="6.5" r="2" stroke-width="1"/>
+                        <circle cx="17.5" cy="6.5" r="0.5" fill="#6c5ce7" stroke="none"/>
+                    </svg>
+                </div>
+                
+                <!-- Bagian Teks -->
+                <div>
+                    <div style="font-weight: bold; color: #0f264c; font-size: 15px;">SIMULASI PAKET 24</div>
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;"></div>
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;"></div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='Materi_07_01_Y.html'" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 15px; padding: 12px 15px; display: flex; align-items: center; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.02); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                <!-- Bagian Ikon Simulasi Paket 25 -->
+                <div style="display: flex; align-items: center; justify-content: center; min-width: 50px; margin-right: 15px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#6c5ce7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <!-- Representasi Bola Dunia / Jaringan Simulasi -->
+                        <circle cx="11" cy="13" r="8" stroke-dasharray="3 1" opacity="0.6"/>
+                        <path d="M11 5a8 8 0 0 0 0 16 M3 13h16"/>
+                        <!-- Representasi Monitor / Layar -->
+                        <rect x="13" y="3" width="9" height="7" rx="1" fill="#ffffff" stroke="#6c5ce7" stroke-width="1.5"/>
+                        <!-- Simbol Roket di Dalam Layar -->
+                        <path d="M16 8.5l.5-1.5 2.5-2.5.5.5-2.5 2.5z" fill="#6c5ce7" stroke-width="0.5"/>
+                        <path d="M15.5 9l1-1" stroke-width="1"/>
+                    </svg>
+                </div>
+                
+                <!-- Bagian Teks -->
+                <div>
+                    <div style="font-weight: bold; color: #0f264c; font-size: 15px;">SIMULASI PAKET 25</div>
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;"></div>
+                    <div style="font-size: 12px; color: #64748b; margin-top: 2px;"></div>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+    <script>
+        window.onload = function() {
+            // Logika untuk Paket 01
+            let nilaiSimPak01 = localStorage.getItem("skorSimPak001");
+            const elemenNilai01 = document.getElementById('tampilan-nilai-SimPak001');
+            if (elemenNilai01) {
+                if (nilaiSimPak01 !== null) {
+                    elemenNilai01.innerText = nilaiSimPak01;
+                } else {
+                    elemenNilai01.innerText = "0";
+                }
+            }
+            // Logika untuk Paket 02
+            let nilaiSimPak02 = localStorage.getItem("skorSimPak002");
+            const elemenNilai02 = document.getElementById('tampilan-nilai-SimPak002');
+            if (elemenNilai02) {
+                if (nilaiSimPak02 !== null) {
+                    elemenNilai02.innerText = nilaiSimPak02;
+                } else {
+                    elemenNilai02.innerText = "0";
+                }
+            }
+            // Logika untuk Paket 03
+            let nilaiSimPak03 = localStorage.getItem("skorSimPak003");
+            const elemenNilai03 = document.getElementById('tampilan-nilai-SimPak003');
+            if (elemenNilai03) {
+                if (nilaiSimPak03 !== null) {
+                    elemenNilai03.innerText = nilaiSimPak03;
+                } else {
+                    elemenNilai03.innerText = "0";
+                }
+            }
+        };
+    </script>
+        
+
+    
+    
+</body>
+</html>

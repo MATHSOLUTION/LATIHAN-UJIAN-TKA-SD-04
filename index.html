@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HALAMAN LOGIN TKA SD</title>
+    <style>
+        /* CSS Khusus untuk Kotak Login Ujian TKA SMP */
+        .cbt-login-box {
+            width: 100%;
+            margin: 20px auto;
+            padding: 20px 10px;
+            background: #ffffff;
+            text-align: center;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        /* Logo Bulat Berbingkai */
+        .cbt-logo-container {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 15px auto;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border: 2px solid #e2e8f0;
+        }
+
+        .cbt-logo-img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transform: scale(6);
+        }
+
+        /* Tipografi Judul */
+        .cbt-title {
+            color: #0f264c;
+            font-size: 19px;
+            font-weight: 800;
+            margin: 0 0 6px 0;
+            letter-spacing: 0.5px;
+        }
+
+        .cbt-subtitle {
+            color: #8a93a6;
+            font-size: 11px;
+            font-weight: 700;
+            margin: 0 0 25px 0;
+            letter-spacing: 0.5px;
+        }
+
+        /* Group Input & Label */
+        .cbt-field-group {
+            margin-bottom: 18px;
+            text-align: center;
+        }
+
+        .cbt-label {
+            display: block;
+            font-size: 14px;
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 8px;
+        }
+
+        /* Desain Kolom Input Abu-abu Kebiruan */
+        .cbt-input {
+            width: 100%;
+            background-color: #cbd5e1; 
+            color: #334155;
+            border: none;
+            border-radius: 14px; 
+            padding: 12px 18px;
+            font-size: 14px;
+            font-weight: 600;
+            box-sizing: border-box;
+            text-align: left;
+            outline: none;
+        }
+
+        .cbt-input::placeholder {
+            color: #94a3b8;
+        }
+
+        /* Desain Kolom Password + Tombol Intip */
+        .cbt-password-wrapper {
+            position: relative;
+            width: 100%;
+        }
+
+        .cbt-password-wrapper .cbt-input {
+            padding-right: 45px;
+        }
+
+        .cbt-eye-btn {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            color: #64748b;
+            display: flex;
+            align-items: center;
+        }
+
+        .cbt-eye-icon {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* Tombol Mulai Ujian Ungu Cerah */
+        .cbt-submit-btn {
+            width: 100%;
+            background-color: #5046e5; 
+            color: #ffffff;
+            border: none;
+            border-radius: 14px;
+            padding: 14px;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            cursor: pointer;
+            margin-top: 10px;
+            box-shadow: 0 4px 12px rgba(80, 70, 229, 0.25);
+            transition: all 0.2s ease;
+        }
+
+        .cbt-submit-btn:hover {
+            background-color: #4338ca;
+        }
+    </style>
+</head>
+<body style="margin: 0; font-family: Arial, sans-serif; background-color: #f4f4f9;">
+
+    <!-- Kontainer Utama -->
+    <div class="app-container" style="
+        background: #ffffff; 
+        border-radius: 45px; 
+        padding: 0px 25px 25px 25px; 
+        max-width: 375px; 
+        margin: auto; 
+        box-sizing: border-box;
+        min-height: 100vh;
+    ">
+        <!-- HEADER STICKY -->
+        <div style="
+            position: sticky; 
+            top: 0; 
+            background: rgb(59, 251, 1);
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            padding: 15px 25px; 
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            height: 0px;
+        ">
+            <div style="cursor: pointer; font-weight: 700; color: #0f264c; margin-left: -15px;" 
+                onclick="window.location.href='#.html'">
+                ← Kembali
+            </div>
+            <div style="font-weight: 700; color: #0f264c; margin-left: auto; margin-right: -15px; padding-right: -20px;">
+                Login Dahulu
+            </div>
+        </div>
+
+        
+
+        <!-- ======================================================== -->
+        <!-- KOTAK LOGIN CBT TKA SMP (Duduk Manis di Bawah Tombol)   -->
+        <!-- ======================================================== -->
+        <div class="cbt-login-box">
+            <!-- Tempat File Logo Bulat Anda -->
+            <div class="cbt-logo-container">
+                <!-- Sediakan file gambar bernama 'logo.png' atau ganti src di bawah dengan URL logo Anda -->
+                <img src="logologin.png" onerror="this.src='https://images.unsplash.com/photo-1546410531-bb4caa6b424d?q=80&w=200&auto=format&fit=crop'" alt="Logo" class="cbt-logo-img">
+            </div>
+
+            <h2 class="cbt-title">HALAMAN LOGIN LATIHAN TKA SD</h2>
+            <p class="cbt-subtitle">PERSIAPKAN MATERI YANG SUDAH DIPELAJARI</p>
+
+            <!-- Field Nama -->
+            <div class="cbt-field-group">
+                <label class="cbt-label">Nama Lengkap Siswa</label>
+                <input type="text" id="cbt-student-name" class="cbt-input" placeholder="Masukkan Nama Lengkap Kamu">
+            </div>
+
+            <!-- Field Password -->
+            <div class="cbt-field-group">
+                <label class="cbt-label">Password</label>
+                <div class="cbt-password-wrapper">
+                    <input type="password" id="cbt-student-password" class="cbt-input" placeholder="Masukkan Password Kamu">
+                    <button type="button" id="cbt-toggle-eye" class="cbt-eye-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="cbt-eye-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Tombol Submit -->
+            <button type="button" id="cbt-btn-submit" class="cbt-submit-btn" onclick="prosesMasukCbt()">MULAI UJIAN</button>
+        </div>
+        
+
+    </div>
+
+    <!-- Taruh kode JavaScript ini tepat di atas tag </body> -->
+    <script>
+        // 1. KONFIGURASI URL SPREADSHEET BARU
+        // Ganti teks di bawah ini dengan URL Web App hasil Deploy dari Spreadsheet baru Anda
+        const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbyQFphrXQK8iVPjzMEWp02_rLC1J65mMYIpoN7uKlXDcqEgoz2gtfPXQ1bJhis0MPP7/exec";
+        // 2. LOGIKA TOGGLER (MATA PENGINTIP PASSWORD) agar Berfungsi
+        document.getElementById('cbt-toggle-eye').addEventListener('click', function() {
+            const passwordInput = document.getElementById('cbt-student-password');
+            
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                // Mengubah ikon mata menjadi terbuka/coret saat password terlihat
+                this.innerHTML = `
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="cbt-eye-icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l18 18" />
+                    </svg>
+                `;
+            } else {
+                passwordInput.type = "password";
+                // Mengembalikan ikon mata normal
+                this.innerHTML = `
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="cbt-eye-icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                    </svg>
+                `;
+            }
+        });
+
+        // 3. LOGIKA PROSES MASUK CBT (LOGIN SPREADSHEET)
+        function prosesMasukCbt() {
+            const namaCbt = document.getElementById('cbt-student-name').value.trim();
+            const passCbt = document.getElementById('cbt-student-password').value.trim();
+
+            if (namaCbt === "" || passCbt === "") {
+                alert("Nama Lengkap dan Password tidak boleh kosong!");
+                return;
+            }
+
+            const tombolSubmit = document.getElementById('cbt-btn-submit');
+            tombolSubmit.innerText = "MOHON TUNGGU SEJENAK...";
+            tombolSubmit.disabled = true;
+
+            fetch(WEB_APP_URL, {
+                method: "POST",
+                headers: { "Content-Type": "text/plain;charset=utf-8" },
+                body: JSON.stringify({ username: namaCbt, password: passCbt })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === "success") {
+                    localStorage.setItem("namaSiswa", data.nama);
+                    localStorage.setItem("nisnSiswa", data.nisn);
+                    alert("Akses Valid! Selamat Ujian, " + data.nama + ".");
+                    window.location.href = "Pilihan_Paket_Soal_SD.html";
+                } else if (data.status === "error") {
+                    alert("Terjadi Masalah Sistem:\n" + data.message);
+                } else {
+                    alert("Gagal Masuk!\n\nNama Lengkap atau Password Salah. Silakan periksa kembali.");
+                }
+                tombolSubmit.innerText = "MULAI UJIAN";
+                tombolSubmit.disabled = false;
+            })
+            .catch(error => {
+                console.error("Error Jaringan:", error);
+                alert("Terjadi kesalahan koneksi. Pastikan Anda sudah mengganti isi WEB_APP_URL.");
+                tombolSubmit.innerText = "MULAI UJIAN";
+                tombolSubmit.disabled = false;
+            });
+        }
+    </script>
+
+</body>
+</html>

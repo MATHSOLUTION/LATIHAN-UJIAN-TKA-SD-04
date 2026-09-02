@@ -1,0 +1,244 @@
+/* ==========================================
+   1. ATURAN DASAR & TIPOGRAFI
+   ========================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #fbeaf2; /* Latar belakang merah muda pastel lembut */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Kartu Box Login */
+.login-card {
+    background: #ffffff;
+    width: 100%;
+    max-width: 350px;       /* Mengunci lebar kotak agar pas dengan genggaman layar HP */
+    border-radius: 28px;       /* Sudut lengkungan disesuaikan sedikit lebih proporsional */
+    padding: 35px 24px;        /* Mengurangi padding samping agar input data terlihat luas */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03), 0 1px 8px rgba(0, 0, 0, 0.02);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ==========================================
+   2. BAGIAN LOGO (Bulat Elegan)
+   ========================================== */
+.logo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.logo-wrapper {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fdfafc;
+    border: 1px solid #f3e5ee;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.04);
+}
+
+.logo-gambar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ==========================================
+   3. TEKS JUDUL & SUBTITLE
+   ========================================== */
+.title-section {
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.title-section h1 {
+    color: #20224f; /* Warna biru tua pekat */
+    font-size: 21px;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.title-section .subtitle {
+    color: #7c7e96;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+/* ==========================================
+   4. FORM INPUT (Nama & Password)
+   ========================================== */
+.form-group {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    color: #080a01;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.input-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.form-input {
+    width: 100%;
+    height: 52px;
+    background-color: #c9d2e4;
+    border: 1px solid #c9d2e4;
+    border-radius: 14px;
+    padding: 0 18px;
+    font-size: 16px;
+    color: #33334f;
+    font-weight: 600;
+    outline: none;
+    transition: all 0.2s ease;
+    text-align: center;
+}
+
+.form-input::placeholder {
+    color: #b0b2c3;
+    font-weight: 500;
+}
+
+.form-input:focus {
+    background-color: #ffffff;
+    border-color: #4f3ff0;
+    box-shadow: 0 0 0 4px rgba(79, 63, 240, 0.08);
+}
+
+/* Tombol Mata */
+.toggle-password {
+    position: absolute;
+    right: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #8a8c9f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    outline: none;
+}
+
+.toggle-password:hover {
+    color: #4f3ff0;
+}
+
+.toggle-password svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* ==========================================
+   5. TOMBOL SUBMIT
+   ========================================== */
+.btn-submit {
+    background-color: #4f3ff0; /* Warna biru ungu ikonik */
+    color: #ffffff;
+    border: none;
+    border-radius: 16px;
+    width: 100%;
+    height: 54px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 6px 16px rgba(79, 63, 240, 0.25);
+    transition: all 0.2s ease;
+}
+
+.btn-submit:hover {
+    background-color: #3c2dd1;
+    box-shadow: 0 8px 20px rgba(79, 63, 240, 0.35);
+    transform: translateY(-1px);
+}
+
+.btn-submit:active {
+    transform: translateY(1px);
+}
+
+/* ==========================================
+   6. MODAL BOX ALERT KUSTOM
+   ========================================== */
+.custom-alert {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+    z-index: 1000;
+    width: 310px;
+    text-align: center;
+}
+
+.custom-alert p {
+    font-size: 14px;
+    color: #20224f;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.custom-alert button {
+    background-color: #4f3ff0;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 13px;
+    width: 100%;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(32, 34, 79, 0.4);
+    backdrop-filter: blur(2px);
+    z-index: 999;
+}
+
